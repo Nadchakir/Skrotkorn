@@ -4,37 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Våra Medarbetare</title>
+    <link rel="stylesheet" href="CSS/kontaktaoss.css">
+
+
 </head>
-<body>
 
+    <body>
+        <header class="pageheader">
+    
+                <nav class="top-nav">
+                    </nav>
+       
+        </header>
+
+
+    <h1>Våra Medarbetare</h1>
     <br>
-<center>
-    <a href="startsida.html">Startsida</a> |  
-        <a href="media.html">Media</a>  |
-        <a href="produkter.html">Produkter</a> | 
-        <a href="kontaktaoss.html">Kontakta oss</a>  
 
-<h1 align="center">Våra Medarbetare</h1>
+    <table>
+        <tr>
+            <td>
+                <img src="/images/johan.jpg" alt="Johan Larsson" class="staff-image">
+                <br> <br> <b>Johan Larsson</b>
+                <br> <br> <strong>Email:</strong> <a href="mailto:johan@skrotkorn.se" target="mail">johan@skrotkorn.se</a>
+            </td>
+            <td>
 
-<table align="center" width="80%" border="0" cellspacing="20" cellpadding="10">
-    <tr>
-        <td align="center">
-            <img src="/Skrotkorn/images/johan.jpg" alt="Johan Larsson" width="300" height="300">
-            <br> <b>Johan Larsson</b> 
-            <br> <strong>Email:</strong> <a href="mailto:johan@skrotkorn.se">johan@skrotkorn.se</a>
-        </td>
-        <td align="center">
-            <img src="/Skrotkorn/images/erik.jpg" alt="Erik Svensson" width="300" height="300">
-            <br>Namn: Erik Svensson
-            <br>Email: <a href="mailto:erik@skrotkorn.se">erik@skrotkorn.se</a>
-        </td>
-        <td align="center">
-            <img src="/Skrotkorn/images/anton.jpg" alt="Anton Johansson" width="300" height="300">
-            <br>Namn: Anton Johansson
-            <br>Email: <a href="mailto:anton@skrotkorn.se">anton@skrotkorn.se</a>
-        </td>
-    </tr>
-</table>
-</center>
+                <img src="/images/erik.jpg" alt="Erik Svensson" class="staff-image">
+                <br> <br> <b>Erik Svensson</b> 
+
+                <br> <br> <strong>Email:</strong> <a href="mailto:erik@skrotkorn.se" target="mail">erik@skrotkorn.se</a>
+            </td>
+            <td>
+                <img src="/images/anton.jpg" alt="Anton Johansson" class="staff-image">
+                <br> <br>  <b>Anton Johansson</b>
+                <br> <br> <strong>Email:</strong> <a href="mailto:anton@skrotkorn.se" target="mail">anton@skrotkorn.se</a>
+            </td>
+        </tr>
+    </table>
+
+    <br> <br>
+
+    <h2>Kontakta Oss</h2>
+
+    <form action="submit_form.php" method="post" class="custom-form">
+        <div class="form-group">
+            <label for="name">Namn:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+        </div>
+    
+        <div class="form-group">
+            <label for="address">Adress:</label><br>
+            <input type="text" id="address" name="address"><br><br>
+        </div>
+    
+        <div class="form-group">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+        </div>
+    
+        <div class="form-group">
+            <label for="phone">Telefonnummer:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+        </div>
+    </form>
+
+        <fieldset class="customer-type-fieldset">
+            <legend>Kundtyp:</legend>
+            <input type="radio" id="private" name="customerType" value="Privat">
+            <label for="private">Privat</label><br>
+            <input type="radio" id="business" name="customerType" value="Företag">
+            <label for="business">Företag</label>
+        </fieldset><br>
+
+        <fieldset class="company-size-fieldset">
+            <legend>Storlek på företaget:</legend>
+            <input type="radio" id="size1-100" name="companySize" value="1-100">
+            <label for="size1-100">1-100 anställda</label><br>
+            <input type="radio" id="size101-1000" name="companySize" value="101-1000">
+            <label for="size101-1000">101-1000 anställda</label><br>
+            <input type="radio" id="size1001-more" name="companySize" value="1001">
+            <label for="size1001-more">Mer än 1000 anställda</label>
+        </fieldset><br>
+
+        <label for="question">Din fråga:</label><br>
+        <textarea id="question" name="question" rows="4" cols="50"></textarea><br><br>
+
+        <input type="checkbox" id="newsletter" name="newsletter" value="Yes">
+        <label for="newsletter">Jag vill ha nyhetsbrev</label><br><br>
+
+        <input type="checkbox" id="contactByPhone" name="contactByPhone" value="Yes">
+        <label for="contactByPhone">Jag vill bli kontaktad på telefon</label><br><br>
+
+        <input type="submit" value="Skicka">
+    </form>
+    <script src="/js/script.js"></script>
 </body>
 </html>

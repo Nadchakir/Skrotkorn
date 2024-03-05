@@ -1,0 +1,310 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.mainheader {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    padding-left: 45px; /* Observera: detta verkar vara en väldigt stor padding, överväg att justera */
+    padding-top: 20px; /* Samma här, överväg att justera beroende på din layout */
+}
+
+.pageheader {
+    background-image: url("../images/beach-5649161_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(235, 166, 166, 0.4);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: azure;
+}
+
+a:hover {
+    background-color: rgba(235, 166, 166, 0.7); /* Justerat från .a:hover till a:hover för korrekt syntax */
+}
+
+.menu a:hover {
+    background-color: blanchedalmond; /* Justerat från menu.a:hover till .menu a:hover för korrekt syntax */
+}
+
+li {
+    display: inline;
+}
+
+.meny {
+    margin-top: 30px;
+}
+
+.tabell {
+    border-color: chartreuse;
+    border-collapse: collapse;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
+}
+
+.produkter {
+    color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.staff-image {
+    width: 350px; /* Anpassa efter eget önskemål */
+    height: 400px; /* Bibehåller bildens proportioner */
+    margin-right: 70px;
+}
+
+.customer-type-fieldset, .company-size-fieldset {
+    margin: auto; /* Centrerar rutan */
+    padding: 10px; /* Lägger till lite utrymme inuti rutan */
+    box-sizing: border-box; /* Ser till att padding och border ingår i bredden */
+    width: 50%; /* Justera bredden enligt dina behov */
+}
+
+.customer-type-fieldset legend, .company-size-fieldset legend {
+    font-size: 16px; /* Justera storleken på texten för 'legend' enligt dina behov */
+}
+
+.customer-type-fieldset label, .company-size-fieldset label {
+    font-size: 14px; /* Justera storleken på etiketternas text */
+}
+
+/* Observera: Se till att klassnamnen och id-namnen överensstämmer med dina HTML-element */
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.pageheader {
+    background-image: url("/images/crane.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Höjden på din headerbild */
+}
+
+.top-nav ul {
+    list-style-type: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 00px;
+    margin-bottom: 20px; /* Skapar utrymme mellan menyn och bilden */
+}
+
+.top-nav li {
+    margin: 0 10px; /* Justera mellanrummet mellan länkarna */
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: black; /* Färgen på dina länkar */
+    padding: 10px;
+    border-radius: 20px;
+    background-color:#ffffff; /* Bakgrundsfärg för dina länkar */
+}
+
+.top-nav a:hover {
+    background-color:darkorange; /* Hovereffekt för dina länkar */
+}
+
+.holygrail-layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    flex-basis: 20%;
+    background-color:gainsboro; 
+    align-items: center; /* Centrerar innehållet vertikalt */
+    padding: 15px;
+
+}
+
+.company-logo {
+    max-width: 100%;
+    height:auto; /* Justera loggans storlek */
+    margin-bottom: 50px; /* Utrymme under logotypen */
+    margin-top: 60px;
+        position: relative;
+        margin-left: 10px;
+    
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px; /* Utrymme inuti huvudinnehållet */
+}
+
+.about-us, .what-we-offer {
+    margin-bottom: 20px; /* Utrymme mellan sektionerna */
+}
+
+.footer {
+    background-color: #222;
+    color:darkgrey;
+    text-align: center;
+    padding: 20px; /* Utrymme inuti footern */
+}
+
+
+.aside-content {
+    flex-basis: 20%; /* eller vilken bredd du föredrar */
+    padding: 20px;
+    background-color; /* eller en annan bakgrundsfärg */
+}
+
+.advertisement {
+    padding: 15px;
+    margin-top: 20px; /* Lägg till utrymme ovanför annonsen om nödvändigt */
+    background-color: #ffffff; /* eller en annan bakgrundsfärg för annonsen */
+    border: 1px solid #ddd; /* Lägger till en gräns runt annonsen */
+    text-align: center; /* Centrerar annonsens innehåll */
+}
+
+.ad-image {
+    width: 100%; /* Anpassar bilden så att den passar annonsutrymmet */
+    height: auto; /* Behåller bildens proportioner */
+    margin-bottom: 10px; /* Lägger till utrymme under bilden */
+}
+
+
+
+.top-nav {
+    display: flex;
+    justify-content: center; /* Centrerar barn (meny) horisontellt */
+    align-items: center; /* Centrerar barn (meny) vertikalt */
+}
+
+.menu{
+list-style-type: none;
+padding: 0;
+display: flex;
+}
+
+.menu li {
+    margin-right: 0px; /* Justerar utrymmet mellan länkarna */
+}
+
+.menu a {
+    text-decoration: none;
+    color: black; /* Färgen på dina länkar */
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    margin-right: 10px; /* Justerar utrymmet mellan textfältet och sökknappen */
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Lätt grå kant */
+    margin-top: 0px; 
+}
+
+.search-form button {
+    padding: 8px 10px;
+    background-color:#ffffff; /* Anpassa till önskad bakgrundsfärg */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 100px;
+    margin-top: 0px; 
+    
+}
+
+.search-form button:hover {
+    background-color: #ddd; /* Ljusare färg för hover-effekt */
+}
+
+
+
+.bild {
+    width: 300px; /* Ersätt 300px med den önskade bredden */
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+.floating {
+    float: left;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #666;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .social-links a:hover {
+    color: #000;
+    border-color: #666;
+  }
+
+  .sidebar-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-section input[type=email] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .sidebar-section input[type=submit] {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color:#222;
+    color: white;
+  }
+  
+  .sidebar-section {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-section h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .recent-posts li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  
+  .recent-posts li a {
+    text-decoration: none;
+    color: #666;
+  }
+  
+  .recent-posts li a:hover {
+    color: #000;
+  }

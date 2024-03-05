@@ -3,67 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produkter</title>
+    <title>Produkter - Skrot och Korn</title>
+    <link rel="stylesheet" href="CSS/produkter.css">
 </head>
 <body>
-
-    <center>
-        <a href="startsida.html">Startsida</a> |  
-        <a href="media.html">Media</a>  |
-        <a href="produkter.html">Produkter</a> | 
-        <a href="kontaktaoss.html">Kontakta oss</a>  
-
-    <br>
-    <p>
-        <h1>
-
-        <strong>Våra produkter</strong>
-
-        </p>
-
-    </h1>
-
-
-    <table border="1">
-        <tr>
-          <th></th>
-          <th>Produkt</th>
-          <th>Pris exkl.moms</th>
-          <th>Pris inkl.moms</th>
-          <th>Hästkrafter</th>
-          <th>Vikt</th>
-        </tr>
-        <tr>
-          <td><img src="/Skrotkorn/images/lorry.png" alt="Lastbil" width="100"></td>
-          <td><center>Lastbil</center></td>
-          <td><center>500.000:-</center></td>
-          <td><center>625.000:-</center></td>
-          <td><center>400 HK</center></td>
-          <td><center>15.000 KG</center></td>
-        </tr>
-        <tr>
-          <td><img src="/Skrotkorn/images/backhoe.png" alt="Grävskopa" width="100"></td>
-          <td><center>Grävskopa</center></td>
-          <td><center>800.000:-</center></td>
-          <td><center>1000.000:-</center></td>
-          <td><center>150 HK</center></td>
-          <td><center>2500 KG</center></td>
-        </tr>
-        <tr>
-          <td><img src="/Skrotkorn/images/crane.png" alt="Lyftkran" width="100"></td>
-          <td><center>Lyftkran</center></td>
-          <td><center>1,500.000:-</center></td>
-          <td><center>1,875.000:-</center></td>
-          <td><center>250 HK </center></td>
-          <td><center>10.000 KG</center></td>
-        </tr>
-      </table>
-        </tr>
-      </table>
-    </p>
-
-     </table>
-
-    </center>
+    <header class="pageheader">
+        <nav class="top-nav"></nav>
+    </header>
+    <div class="holygrail-layout">
+        <nav class="sidebar">
+            <div class="sidebar-section">
+                <h3>Följ Oss</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h3>Anmäl till Nyhetsbrev</h3>
+                <form>
+                    <input type="email" placeholder="Din e-postadress" required>
+                    <input type="submit" value="Anmäl">
+                </form>
+            </div>
+            <div class="sidebar-section">
+                <h3>Senaste Inlägg</h3>
+                <ul class="recent-posts">
+                    <li><a href="#">Inlägg 1</a></li>
+                    <li><a href="#">Inlägg 2</a></li>
+                    <li><a href="#">Inlägg 3</a></li>
+                    <li><a href="#">Inlägg 4</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="main-content">
+            <!-- Content like 'Om oss', 'Vad vi erbjuder' etc. -->
+            <h2 class="produkter">Våra produkter</h2>
+            <table class="tabell" border="2">
+                <tr>
+                    <th></th>
+                    <th>Produkt</th>
+                    <th>Pris exkl.moms</th>
+                    <th>Pris inkl.moms</th>
+                    <th>Hästkrafter</th>
+                    <th>Vikt</th>
+                </tr>
+                <tr>
+                    <td><img src="/images/lorry.png" alt="Lastbil" width="100"></td>
+                    <td>Lastbil</td>
+                    <td>500.000:-</td>
+                    <td>625.000:-</td>
+                    <td>400 HK</td>
+                    <td>15.000 KG</td>
+                </tr>
+                <tr>
+                    <td><img src="/images/backhoe.png" alt="Grävskopa" width="100"></td>
+                    <td>Grävskopa</td>
+                    <td>800.000:-</td>
+                    <td>1.000.000:-</td>
+                    <td>150 HK</td>
+                    <td>2.500 KG</td>
+                </tr>
+                <tr>
+                    <td><img src="/images/crane.png" alt="Lyftkran" width="100"></td>
+                    <td>Lyftkran</td>
+                    <td>1.500.000:-</td>
+                    <td>1.875.000:-</td>
+                    <td>250 HK</td>
+                    <td>10.000 KG</td>
+                </tr>
+            </table>
+        </main>
+    </div>
+        </main>
+        <aside class="aside-content">
+            <div class="advertisement">
+                <h3>Annons</h3>
+                <img src="/images/crane.png" alt="Reklambild" class="ad-image">
+                <p>hahaha</p>
+                <img src="/images/crane.png" alt="Reklambild" class="ad-image">
+                <p>hahaha</p>
+                <img src="/images/crane.png" alt="Reklambild" class="ad-image">
+            </div>
+        </aside>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Skrot och Korn AB. Alla rättigheter förbehållna.</p>
+        <p>Integritetspolicy | Användarvillkor | Cookiepolicy</p>
+    </footer>
+    <script src="/js/script.js"></script>
 </body>
 </html>
